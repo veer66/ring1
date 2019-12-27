@@ -8,6 +8,5 @@
 
 (defn -main
   []
-  (let [tracker (ns-tracker ["src"])]
-    (run-jetty (wrap-reload #'app)
-               {:port 3000})))
+  (run-jetty (wrap-reload #'app)
+               {:port 3000}))
